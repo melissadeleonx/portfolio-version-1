@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .navbar {
@@ -51,11 +52,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   transition: color 0.3s ease;
-}
-
-.search-icon {
-  font-family: 'sans-serif';
-  font-size: 24px;
 }
 
 .btn-read-blog {
