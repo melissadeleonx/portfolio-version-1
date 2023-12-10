@@ -81,7 +81,8 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: rgb(13, 31, 13);;
+  background-color: rgb(13, 31, 13);
+  z-index: 2
 }
 
 .hero-video video {
@@ -92,6 +93,7 @@ body {
 
 .hero-content {
   position: absolute;
+  margin-top: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -126,4 +128,33 @@ body {
 .button-cta .button-cta__text:hover {
   background-color: #df1621; 
   color: #fff; 
+}
+
+
+.social-links-container {
+  background-color: transparent; 
+  padding: 10px;
+  padding-left: 50px; 
+  border-radius: 10px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.social-icon {
+  margin-right: 50px;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover,
+.social-icon img:hover {
+  transform: scale(1.2);
 }
