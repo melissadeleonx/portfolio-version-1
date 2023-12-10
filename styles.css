@@ -81,7 +81,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: green;
+  background-color: rgb(13, 31, 13);;
 }
 
 .hero-video video {
