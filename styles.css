@@ -1,9 +1,18 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  
+  .navbar-brand {
+    margin-right: auto; 
+  }
+
   .navbar-nav {
       flex-direction: column;
       align-items: center;
-     .btn-read-blog {
+      margin-left: auto; 
+      .btn-read-blog {
         display: none;
+      }
+      .hero-content h1 {
+        font-size: 18px; 
       }
   }
 }
