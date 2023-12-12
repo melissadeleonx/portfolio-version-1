@@ -27,6 +27,7 @@
       width: 50px;
       border: 1px solid #ffcccc;
     }
+    
 }
 
  /* Homepage */
@@ -100,6 +101,7 @@ body {
 .navbar-nav .nav-item:hover .dropdown-menu a {
   color: black;
 }
+
 
 .hero-video {
   position: relative;
@@ -176,7 +178,7 @@ body {
   height: auto;
   border-radius: 50%;
   transition: transform 0.2s ease-in-out;
-  border: 2px solid #ffcccc;
+  border: 2px solid #ffcccc10;
 }
 
 .social-icon:hover,
@@ -228,3 +230,5 @@ body {
   background-color: #df1621;
   color: #fff;
 } 
+
+
