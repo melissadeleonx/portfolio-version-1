@@ -32,13 +32,13 @@
         <meta property="og:url" content="https://melissadeleonx.com/about.html">
         <meta property="og:type" content="website">
   </head>
-  <body data-spy="scroll" data-target="#navbar">
+  <body data-spy="scroll" data-target="#navbar" class="about-page">
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://melissadeleonx.github.io/melissadeleon/">
-                <img src="melissa-deleon-black-logo.png" alt="Melissa De Leon Logo" class="logo">
+                <img src="https://raw.githubusercontent.com/melissadeleonx/melissadeleon/main/melissa-deleon-black-logo.png" alt="Melissa De Leon Logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
                         <a class="nav-link text-black" href="https://melissadeleonx.github.io/melissadeleon/about.html">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="https://melissadeleonx.github.io/melissadeleon/my-tech-journey">My Tech Journey</a>
+                        <a class="nav-link text-black" href="https://melissadeleonx.github.io/melissadeleon/my-tech-journey.html">My Tech Journey</a>
                     </li>
                     <li class="nav-item dropdown" onmouseover="document.getElementById('projectsDropdown').classList.add('show')" onmouseout="document.getElementById('projectsDropdown').classList.remove('show')">
                         <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,16 +69,55 @@
                 </ul>
             </div>
             <div class="navbar-nav ml-auto">
+                <form class="form-inline my-2 my-lg-0">
+                    <span class="search-icon">&#xe8b6;</span>
+                </form>
                 <a class="nav-link btn-read-blog" href="#">Read My Blog</a>
             </div>          
         </div>
     </nav>
 
-    <hr class="my-2 mx-4" style="border-color: #888282; border-width: 2px;">
+    <hr class="my-2 mx-4 mt-0" style="border-color: #888282; border-width: 2px;">
 
-    <div class="container mt-5">
-        <h1>About Me</h1>
+    <!-- About Section -->
+    <div class="container-about-page mt-5">
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <h1 class="text-4xl font-bold text-slate-200 sm:text-5xl">Melissa De Leon</a></h1>
+                <h3 class="text-lg font-medium text-slate-200 sm:text-xl">Junior Software Developer</h3>
+                <p class="mt-3 max-w-md leading-normal">
+                    I am learning web and software development and currently building small programs to improve my skills.
+                </p>
+                <div class="btn-group-vertical mt-4">
+                    <a href="#section1" class="btn btn-outline-primary border-0">About me &rarr;</a>
+                    <a href="#section2" class="btn btn-outline-primary border-0">Experience &rarr;</a>
+                    <a href="#section2" class="btn btn-outline-primary border-0">Project &rarr;</a>
+                    <a href="#section2" class="btn btn-outline-primary border-0">Achievements &rarr;</a>
+                    <a href="#section2" class="btn btn-outline-primary border-0">View Full CV &rarr;</a>
+                </div>
+            </div>
+            <!-- Right Column -->
+            <div class="col-md-6 right-column">
+                <p>Born WILD!</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo vel neque vulputate congue. 
+                    Integer ut odio ut sapien volutpat venenatis. In hac habitasse platea dictumst. Duis ac justo nec nunc aliquet facilisis. 
+                    Vivamus vestibulum ipsum nec odio imperdiet, at varius libero pharetra. Curabitur ultricies sapien nec arcu varius lacinia. 
+                    Sed nec congue justo. Ut efficitur, ligula vitae sagittis bibendum, nisl metus suscipit nulla, eu vestibulum sapien sem non neque. 
+                    Pellentesque vel neque a orci efficitur convallis. Quisque euismod eu arcu vel interdum. Ut tincidunt semper feugiat. 
+                    Nullam tincidunt purus vel lectus dapibus, id euismod nulla ultricies. Fusce ac elit vitae elit fermentum hendrerit. 
+                    Suspendisse hendrerit nisl in tortor congue, vel malesuada felis pharetra.
+                </p>              
+                <p>
+                    Duis at justo vitae neque tincidunt imperdiet. Sed sit amet quam id felis fringilla bibendum. 
+                    Nullam et quam vel est commodo fermentum id id enim. Proin sed est non purus pharetra lacinia vel at purus. 
+                    Integer rhoncus a lacus nec egestas. Donec sagittis mauris vel diam ultrices, ut rhoncus ex suscipit. 
+                    Curabitur consectetur erat ac tristique bibendum. Vestibulum ac libero in tellus pharetra laoreet et sit amet velit. 
+                    Suspendisse potenti. Aenean sit amet neque ut urna fermentum tristique at et ligula. Suspendisse fringilla quam a ultrices luctus.
+                </p> 
+            </div>
+        </div>
     </div>
-    
-</body>
+   </body>
 </html>
