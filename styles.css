@@ -8,18 +8,25 @@
   .navbar-nav {
       flex-direction: column;
       align-items: center;
-      margin-left: auto; 
-      .btn-read-blog {
-        display: none;
-      }
-      .hero-content h1 {
-        font-size: 18px; 
-      }
-
-      .hero-content p {
-        font-size: 14px;
-      }
+      margin-left: auto;
   }
+      
+    .btn-read-blog {
+      display: none;
+    }
+
+    .hero-content h1 {
+      font-size: 18px; 
+    }
+
+    .hero-content p {
+      font-size: 14px;
+    }
+
+    .social-icon img {
+      width: 50px;
+      border: 1px solid #ffcccc;
+    }
 }
 
  /* Homepage */
