@@ -206,6 +206,24 @@ body {
   font-size: 4rem; 
   font-weight: bold;
 }
+
+
+.text-shine:hover {
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: rainbowShine 1.5s linear infinite;
+}
+
+@keyframes rainbowShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
 .col-md-6 h3 {
   margin-top: -30px !important; 
 }
@@ -214,21 +232,54 @@ body {
   margin-right: 40px;
 }
 
-.btn-group-vertical a {
-  color: #000; 
-  transition: transform 0.2s, background-color 0.2s, color 0.2s; 
+.nav-pills .nav-link {
+  color: #000;
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
-.btn-group-vertical a:hover,
-.btn-group-vertical a:focus {
-  background-color: #df1621; 
+.nav-pills .nav-link:hover, .nav-pills .nav-link:focus {
+  background-color: #df1621;
+  color: #fff;
+  transform: translate(5px, 0) scale(1.05);
+}
+
+.nav-pills .nav-link.active {
+  background-color: #df1621;
   color: #fff; 
   transform: translate(5px, 0) scale(1.05); 
 }
 
-.btn-group-vertical a.active {
-  background-color: #df1621;
-  color: #fff;
-} 
+.hover-container a {
+  text-decoration: none;
+  color: #df1621;
+}
 
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hover-container:hover .hover-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hot-pink-link a {
+  color: #e307bf; /* Hot pink color */
+  text-decoration: none; /* Remove underline */
+}
+
+.hot-pink-link strong {
+  font-weight: bold; /* Make the text bold */
+}
 
