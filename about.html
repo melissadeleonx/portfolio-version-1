@@ -77,117 +77,129 @@
         </div>
     </nav>
 
-    <hr id="about-me-section" class="my-2 mx-4 mt-0" style="border-color: #888282; border-width: 2px;">
+    <hr class="my-2 mx-4 mt-0" style="border-color: #888282; border-width: 2px;">
 
     <!-- About Section -->
     <div class="container-about-page mt-5">
         <div class="row">
             <!-- Left Column -->
             <div class="col-md-6 position-fixed">
-                <h1 class="text-4xl font-bold text-slate-200 sm:text-5xl">Melissa De Leon</h1>
+                <h1 class="text-4xl font-bold text-slate-200 sm:text-5xl text-shine">Melissa De Leon</h1>
                 <h3 class="text-lg font-medium text-slate-200 sm:text-xl">Junior Software Developer</h3>
                 <p class="mt-3 max-w-md leading-normal">
                     I am learning web and software development and currently building small programs to improve my skills.
                 </p>
-                <div class="btn-group-vertical mt-4">
-                    <a href="#about-me-section" class="btn btn-outline-primary border-0 btn-scroll">About me &rarr;</a>
-                    <a href="#experience-section" class="btn btn-outline-primary border-0 btn-scroll">Experience &rarr;</a>
-                    <a href="#projects-section" class="btn btn-outline-primary border-0 btn-scroll">Projects &rarr;</a>
-                    <a href="#achievement-section" class="btn btn-outline-primary border-0 btn-scroll">Achievements &rarr;</a>
-                    <a href="#cv-section" class="btn btn-outline-primary border-0 btn-scroll">View Full CV &rarr;</a>
+                <div class="col-md-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-about-me-tab" data-bs-toggle="pill" href="#v-pills-about-me" role="tab" aria-controls="v-pills-about-me" aria-selected="true">About Me &rarr;</a>
+                        <a class="nav-link" id="v-pills-experience-tab" data-bs-toggle="pill" href="#v-pills-experience" role="tab" aria-controls="v-pills-experience" aria-selected="false">Experience &rarr;</a>
+                        <a class="nav-link" id="v-pills-projects-tab" data-bs-toggle="pill" href="#v-pills-projects" role="tab" aria-controls="v-pills-projects" aria-selected="false">Projects &rarr;</a>
+                        <a class="nav-link" id="v-pills-achievements-tab" data-bs-toggle="pill" href="#v-pills-achievements" role="tab" aria-controls="v-pills-achievements" aria-selected="false">Achievements &rarr;</a>
+                        <a class="nav-link" id="v-pills-cv-tab" data-bs-toggle="pill" href="#v-pills-cv" role="tab" aria-controls="v-pills-cv" aria-selected="false">CV &rarr;</a>
+                    </div>
                 </div>
             </div>
             <!-- Right Column -->
             <div class="col-md-6 offset-md-6">
-                <p>
-                    In my younger years, success was synonymous with financial prosperity and a life untouched by worries 
-                    about essentials. However, my perspective has evolved over time. Equipped with programming skills, 
-                    my current passion centers around leveraging code to contribute to a secure global future. 
-                    I am an advocate for ensuring universal access to fundamental needs. Food and health for every child on Earth!
-                </p>              
-                <p>
-                    My journey into the world of Computer Science started through the Harvard University's CS50 program 
-                    on EDX Online. This experience stands out as one of the most transformative events in my life. 
-                    Having dedicated over 15 years to a career in customer service, the realization that a second path 
-                    awaited me was both surprising and exhilarating. It turns out, there was an untapped passion capable of 
-                    eliciting an ecstatic feeling, a revelation that reshaped my professional trajectory.
-                </p>
-                <p>
-                    Beyond the screen, my world is all about my beautiful son, whose mind is as beautiful. 
-                    He is my inspiration and imagination in human form. 
-                    We dream together every day. And when I'm not in mom mode, I'm up for a game of online chess. 
-                    Challenge me if you dare!<!-- Put Queen Cursor here later! -->
-                </p>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-about-me" role="tabpanel" aria-labelledby="v-pills-about-me-tab">
+                        <p>
+                            In my younger years, success was synonymous with financial prosperity and a life untouched by worries 
+                            about essentials. However, my perspective has evolved over time. Equipped with programming skills, 
+                            my current passion centers around leveraging code to contribute to a secure global future. 
+                            I am an advocate for ensuring universal access to fundamental needs. Food and health for every child on Earth!
+                        </p>              
+                        <p>
+                            My journey into the world of Computer Science started through the <span class="hover-container">
+                                <a href="https://cs50.harvard.edu/x/2023/" target="_blank"><strong>Harvard University's CS50 program</strong></a>
+                                <img src="https://raw.githubusercontent.com/melissadeleonx/melissadeleon/main/ddb50.gif" alt="Duck Gif" class="hover-content"style="width: 50px; height: auto";>
+                              </span> on EDX Online. This experience stands out as one of the most transformative events in my life. 
+                            Having dedicated over 15 years to a career in customer service, the realization that a second path 
+                            awaited me was both surprising and exhilarating. It turns out, there was an untapped passion capable of 
+                            eliciting an ecstatic feeling, a revelation that reshaped my professional trajectory.
+                          </p>
+                          
+                        <p>
+                            Beyond the screen, my world is all about my beautiful son, whose mind is as beautiful. 
+                            He is my inspiration and imagination in human form. 
+                            We dream together every day. And when I'm not in mom mode, I'm up for a game of chess.
+                            <span class="hot-pink-link">
+                                <a href="https://www.chess.com/" target="_blank">
+                                  <strong>Challenge me if you dare!</strong>
+                                </a>
+                            </span>
+                        </p>
+                    </div>
 
                 <!-- EXPERIENCE SECTION -->
-                <div id="experience-section" class="my-20"></div>
+                <div class="tab-pane fade" id="v-pills-experience" role="tabpanel" aria-labelledby="v-pills-experience-tab">
+                    <!-- Work 1 -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                        <h5>Freelance Web Developer</h5>
+                        <p class="text-muted">2023 — Present</p>
+                        </div>
+                        <div class="card-body">
+                        <p>Advancing my skills through Harvard's CS50x and CS50 Web Development courses. 
+                            I'm actively building WordPress themes and contributing to GitHub projects.</p>
+                        </div>
+                    </div>
 
-                <!-- Work 1 -->
-                <div class="card mt-4">
-                    <div class="card-header">
-                    <h5>Freelance Web Developer</h5>
-                    <p class="text-muted">2023 — Present</p>
+                    <!-- Work 2 -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                        <h5>SEO & Social Media Manager</h5>
+                        <p class="text-muted">2019 — 2021</p>
+                        </div>
+                        <div class="card-body">
+                        <p>Specializing in SEO and WordPress Management, showcased in my work on SicilyShortStay.com and VisitSicilyNow.com. 
+                            I excel in Social Media and Content Management, contributing expertise to Hotel Tourist Cefalu, 
+                            MediTravel, and Palazzo Raho.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                    <p>Advancing my skills through Harvard's CS50x and CS50 Web Development courses. 
-                        I'm actively building WordPress themes and contributing to GitHub projects.</p>
-                    </div>
-                </div>
 
-                <!-- Work 2 -->
-                <div class="card mt-4">
-                    <div class="card-header">
-                    <h5>SEO & Social Media Manager</h5>
-                    <p class="text-muted">2019 — 2021</p>
+                    <!-- Work 3 -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                        <h5>Business Development Manager</h5>
+                        <p class="text-muted">2015 — 2018</p>
+                        </div>
+                        <div class="card-body">
+                        <p> Dedicated nearly 8 years to World Escape LLC, progressing from Customer Service 
+                            to actively promoting and establishing partnerships with vacation rental websites 
+                            and property management companies.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                    <p>Specializing in SEO and WordPress Management, showcased in my work on SicilyShortStay.com and VisitSicilyNow.com. 
-                        I excel in Social Media and Content Management, contributing expertise to Hotel Tourist Cefalu, 
-                        MediTravel, and Palazzo Raho.</p>
-                    </div>
-                </div>
 
-                <!-- Work 3 -->
-                <div class="card mt-4">
-                    <div class="card-header">
-                    <h5>Business Development Manager</h5>
-                    <p class="text-muted">2015 — 2018</p>
+                    <!-- Work 4 -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                        <h5>Customer Service Manager</h5>
+                        <p class="text-muted">2010 — 2018</p>
+                        </div>
+                        <div class="card-body">
+                        <p>Led the customer service division, providing dedicated support to guests and property owners 
+                            across World Escape's premium websites., including NewYorkStay.com, AmsterdamStay.com, 
+                            AmsterdamEscape.com, RomeEscape.com, LondonEscape.com, and more.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                    <p> Dedicated nearly 8 years to World Escape LLC, progressing from Customer Service 
-                        to actively promoting and establishing partnerships with vacation rental websites 
-                        and property management companies.</p>
-                    </div>
-                </div>
 
-                <!-- Work 4 -->
-                <div class="card mt-4">
-                    <div class="card-header">
-                    <h5>Customer Service Manager</h5>
-                    <p class="text-muted">2010 — 2018</p>
-                    </div>
-                    <div class="card-body">
-                    <p>Led the customer service division, providing dedicated support to guests and property owners 
-                        across World Escape's premium websites., including NewYorkStay.com, AmsterdamStay.com, 
-                        AmsterdamEscape.com, RomeEscape.com, LondonEscape.com, and more.</p>
-                    </div>
-                </div>
-
-                <!-- Work 5 -->
-                <div class="card mt-4">
-                    <div class="card-header">
-                    <h5>Customer Service Representative</h5>
-                    <p class="text-muted">2007 — 2010</p>
-                    </div>
-                    <div class="card-body">
-                    <p>Began my career at 17, managing multiple accounts in various industries
-                        such as insurance, mortgage, real estate, telemarketing, and more, 
-                        before relocating to Italy.</p>
+                    <!-- Work 5 -->
+                    <div class="card mt-4">
+                        <div class="card-header">
+                        <h5>Customer Service Representative</h5>
+                        <p class="text-muted">2007 — 2010</p>
+                        </div>
+                        <div class="card-body">
+                        <p>Began my career at 17, managing multiple accounts in various industries
+                            such as insurance, mortgage, real estate, telemarketing, and more, 
+                            before relocating to Italy.</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- PROJECTS SECTION -->
-                <div id="projects-section" class="my-100">
+                <div class="tab-pane fade" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
 
                     <div class="card mt-4">
                         <div class="card-header">
@@ -238,6 +250,33 @@
                             <p>CS50 project assignment</p>
                         </div>
                     </div>
+                </div>
+
+                <!-- ACHIEVEMENT SECTION TEMPORARY -->
+                <div class="tab-pane fade" id="v-pills-achievements" role="tabpanel" aria-labelledby="v-pills-achievements-tab">
+
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h5>ACHIEVEMENT</h5>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/melissadeleonx/melissadeleon/main/melissa-deleon-black-logo.png" alt="CASH Project Preview" class="card-img-top">
+                        <div class="card-body">
+                            <p>CERTIFICATES</p>
+                        </div>
+                    </div>
+
+                    <div class="card mt-4">
+                        <div class="card-header">
+                            <h5>ACHIEVEMENT</h5>
+                        </div>
+                        <img src="https://raw.githubusercontent.com/melissadeleonx/melissadeleon/main/melissa-deleon-black-logo.png" alt="CASH Project Preview" class="card-img-top">
+                        <div class="card-body">
+                            <p>CERTIFICATES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-cv" role="tabpanel" aria-labelledby="v-pills-cv-tab">
+                    <!-- CV Section Here -->
                 </div>
                 </div>
                 </div>
