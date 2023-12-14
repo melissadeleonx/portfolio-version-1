@@ -46,13 +46,13 @@ body {
   padding: 10px;
   box-sizing: border-box;
   z-index: 1000; 
-  font-family: 'sans-serif', sans-serif !important;
+  font-family: 'sans-serif', sans-serif;
 }
 
 .navbar-brand img {
   width: 100px; 
   height: auto;
-  margin-left: 50px !important;
+  margin-left: 50px;
 }
 
 .navbar-nav {
@@ -82,9 +82,9 @@ body {
 
 .btn-read-blog {
   background-color: #df1621; 
-  color: #fff !important;
-  margin-right: 10px; 
-  margin-left: 40px !important;
+  color: #fff;
+  margin-right: 50px; 
+  margin-left: 40px;
   padding: 10px 20px;
   border-radius: 5px; 
   text-decoration: none
@@ -100,33 +100,6 @@ body {
 
 .navbar-nav .nav-item:hover .dropdown-menu a {
   color: black;
-}
-
-.gsc-clear-button {
-  display: none !important;
-}
-
-.gcse-search {
-  margin-top: 0; 
-  margin: 0;
-}
-
-.gsc-search-button {
-  display: inline-block !important;
-  width: 50px; 
-  height: 50px; 
-  background-color: transparent !important;
-  border: none !important;
-  padding: 0 !important;
-}
-
-.gsc-input {
-  width: 40%; 
-  padding: 0;
-  border: none;
-  margin: 0;
-  height: auto;
-  background: none; 
 }
 
 .hero-video {
