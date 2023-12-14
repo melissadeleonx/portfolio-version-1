@@ -83,7 +83,7 @@ body {
 .btn-read-blog {
   background-color: #df1621; 
   color: #fff;
-  margin-right: 50px; 
+  margin-right: 50px !important; 
   margin-left: 40px;
   padding: 10px 20px;
   border-radius: 5px; 
