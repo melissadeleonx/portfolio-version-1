@@ -59,17 +59,12 @@ footer a {
 }
 
 .social-icon img {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  transition: transform 0.2s ease-in-out;
-  border: 2px solid #fff; 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  width: 60px;
+  height: 60px;
 }
 
 .social-icon {
   margin: 0 10px;
-  border-radius: 50%;
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
   display: inline-block; 
@@ -78,6 +73,5 @@ footer a {
 .social-icon:hover,
 .social-icon img:hover {
   transform: scale(1.2);
-  border-color: #ffcccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
