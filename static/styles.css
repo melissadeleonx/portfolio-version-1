@@ -1,9 +1,12 @@
  /* Mobile Version */
 @media (max-width: 767px) {
 
+}
 
  /* Homepage */
-
+.navbar-brand img {
+  width: 100px; 
+  height: auto;
 
  /* About Page */
 
