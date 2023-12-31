@@ -45,25 +45,30 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/about">ABOUT</a>
+          <a class="nav-link text-black" href="/about">ABOUT</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/my-tech-journey">My Tech Journey</a>
+          <li class="nav-item active">
+          <a class="nav-link text-black" href="/my-tech-journey">My Tech Journey</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">PROJECTS</a>
+         <li class="nav-item active">
+          <a class="nav-link text-black" href="/projects">PROJECTS</a>
           </li>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="projectsDropdown">
-                <a class="dropdown-item" href="#">2023</a>
-                <a class="dropdown-item" href="#">2024</a>
-                <a class="dropdown-item" href="#">2025</a>
-                <a class="dropdown-item" href="#">2026</a>
-                <a class="dropdown-item" href="#">2027</a>
-            </div>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">CONTACT</a>
+          <li class="nav-item dropdown" onmouseover="document.getElementById('projectsDropdown').classList.add('show')" onmouseout="document.getElementById('projectsDropdown').classList.remove('show')">
+              <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  PROJECTS
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="projectsDropdown">
+                  <a class="dropdown-item" href="#">2023</a>
+                  <a class="dropdown-item" href="#">2024</a>
+                  <a class="dropdown-item" href="#">2025</a>
+                  <a class="dropdown-item" href="#">2026</a>
+                  <a class="dropdown-item" href="#">2027</a>
+              </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-black" href="/contact">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -72,7 +77,7 @@
       </div>
     </div>
   </nav>
-    <hr class="my-2 mx-4 mt-0" style="border-color: #888282; border-width: 2px;">
+   <hr class="my-2 mx-4 mt-0" style="border-color: #888282; border-width: 2px;">
 
     <!-- About Section -->
     <div class="container-about-page mt-5">
