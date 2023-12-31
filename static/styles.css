@@ -58,27 +58,3 @@ footer a {
 
 }
 
-.social-links-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.social-icon {
-  margin: 0 10px; /* Adjust margin as needed */
-  text-decoration: none;
-  transition: transform 0.2s ease-in-out;
-}
-
-.social-icon img {
-  width: 80px; /* Adjust width as needed */
-  height: auto;
-  border-radius: 50%;
-  transition: transform 0.2s ease-in-out;
-  border: 2px solid #ffcccc10;
-}
-
-.social-icon:hover,
-.social-icon img:hover {
-  transform: scale(1.2);
-}
