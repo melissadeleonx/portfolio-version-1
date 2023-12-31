@@ -59,23 +59,19 @@ footer a {
 }
 
 .social-links-container {
-  background-color: transparent;
-  padding: 10px;
-  padding-left: 50px;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .social-icon {
-  margin-right: 50px;
+  margin: 0 10px; /* Adjust margin as needed */
   text-decoration: none;
   transition: transform 0.2s ease-in-out;
 }
 
 .social-icon img {
-  width: 80px;
+  width: 80px; /* Adjust width as needed */
   height: auto;
   border-radius: 50%;
   transition: transform 0.2s ease-in-out;
