@@ -58,3 +58,37 @@ footer a {
 
 }
 
+.social-icon img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #fff; /* Add a border with a color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.social-icon {
+  margin: 0 15px; /* Adjust margin as needed */
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block; /* Prevent line breaks between icons */
+}
+
+.social-icon:hover,
+.social-icon img:hover {
+  transform: scale(1.2);
+  border-color: #ffcccc; /* Change border color on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+}
+
+.text-muted {
+  font-size: 14px;
+  color: #666; /* Change text color */
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Change text color */
+}
+
