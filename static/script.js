@@ -12,3 +12,17 @@ document.addEventListener('DOMContentLoaded', function () {
         var isDarkMode = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkMode);
     }
+
+    if (modeToggleBtn) {
+        modeToggleBtn.addEventListener('click', toggleDarkMode);
+    } else {
+        console.error("Element with ID 'modeToggle' not found.");
+    }
+
+    var storedDarkMode = localStorage.getItem('darkMode');
+    if (storedDarkMode === 'true') {
+        body.classList.add('dark-mode');
+    } else {
+        body.classList.remove('dark-mode');
+    }
+});
