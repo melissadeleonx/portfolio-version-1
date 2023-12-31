@@ -1,23 +1,14 @@
-// Button scroll effect
-$(document).ready(function () {
-    var buttons = $('.btn-scroll');
+// To make the light and dark mode toggle work for every pages
+document.addEventListener('DOMContentLoaded', function () {
+    var modeToggleBtn = document.getElementById('modeToggle');
+    var body = document.body;
 
-    $(window).scroll(function () {
-        buttons.each(function () {
-            var targetSection = $(this).attr('href');
-            var targetOffset = $(targetSection).offset();
+    function toggleDarkMode() {
+        body.classList.toggle('dark-mode');
+        updateDarkModePreference();
+    }
 
-            if (targetOffset && targetOffset.hasOwnProperty('top')) {
-                targetOffset = targetOffset.top;
-                var scrollPosition = $(window).scrollTop();
-
-                if (scrollPosition >= targetOffset - 100 && scrollPosition < targetOffset + 400) {
-                    console.log("Triggering click on:", this);
-                    $(this).click();
-                }
-            } else {
-                console.error("Could not find target section:", targetSection);
-            }
-        });
-    });
-});
+    function updateDarkModePreference() {
+        var isDarkMode = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkMode);
+    }
