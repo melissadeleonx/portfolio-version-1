@@ -4,9 +4,65 @@
 }
 
  /* Homepage */
-.navbar-brand img {
-  width: 100px; 
-  height: auto;
+/* Global Styles */
+
+.brand-logo {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark-mode .custom-th {
+    color: #fff;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+nav.navbar {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+/* Connecting Galaxies effect */
+.text-shine:hover {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: rainbowShine 3s linear infinite;
+  }
+
+  @keyframes rainbowShine {
+    0% {
+      background-position: 200% 50%;
+    }
+    100% {
+      background-position: -100% 50%;
+    }
+  }
+
+
+/* No text decoration on anchor links */
+footer a {
+    text-decoration: none;
+
+}
 
  /* About Page */
 
