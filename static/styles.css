@@ -1,3 +1,4 @@
+
 /* Mobile Device styling */
 @media (max-width: 768px) {
  
@@ -59,39 +60,41 @@ nav.navbar {
 
 /* Video Hero Style */
 
- .hero-video-container {
-     position: relative;
-     height: 120vh; /* Adjust the height as needed (twice the height of the video) */
-     overflow: hidden;
- }
+.hero-video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
- video {
-     width: 100%;
-     height: 200%; /* Set the height to be twice the height of the video container */
-     object-fit: cover;
-     position: absolute;
-     top: 0;
-     left: 0;
- }
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
- .content-overlay {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     text-align: center;
-     color: #fff; /* Text color */
- }
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+}
 
- /* Add more styling as needed for your content */
- .content-overlay h1 {
-     font-size: 2.5em;
-     margin-bottom: 20px;
- }
+/* Add more styling as needed for your content */
+.content-overlay h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
 
- .content-overlay p {
-     font-size: 1.2em;
- }
+.content-overlay p {
+  font-size: 1.2em;
+}
+
+
 
 /* Connecting Galaxies effect */
 .text-shine:hover {
@@ -261,4 +264,3 @@ footer a {
   padding: 5px; 
   border-radius: 50%; 
 }
-
