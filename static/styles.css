@@ -1,3 +1,7 @@
+/* Mobile Device styling */
+@media (max-width: 768px) {
+ 
+}
 /* Global Styles */
 
 .brand-logo {
@@ -32,6 +36,65 @@ nav.navbar {
     color: #fff !important;
 }
 
+.viewproject-btn {
+  background-color: #df1621;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.viewproject-btn:hover,
+.viewproject-btn:focus {
+  background-color: #a80f18; 
+  transform: translate(5px, 0) scale(1.05);
+}
+
+.viewproject-btn:active {
+  background-color: #a80f18; 
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* Video Hero Style */
+
+.hero-video-container {
+  position: relative;
+  height: 60vh; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+/* Add more styling as needed for your content */
+.content-overlay h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.content-overlay p {
+  font-size: 1.2em;
+}
+
+
+
 /* Connecting Galaxies effect */
 .text-shine:hover {
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
@@ -58,6 +121,7 @@ footer a {
 
 }
 
+
 .social-icon img {
   width: 60px;
   height: 60px;
@@ -76,7 +140,7 @@ footer a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* About Page */
+ /* About Page */
  .col-md-6 h1 {
   text-align: left;
   margin-bottom: 20px;
@@ -117,21 +181,7 @@ footer a {
   color: inherit;
   margin-right: 15rem
 }
-.viewproject-btn {
-  background-color: #df1621;
-  color: #fff;
-  transition: background-color 0.2s, color 0.2s, transform 0.2s;
-}
 
-.viewproject-btn:hover,
-.viewproject-btn:focus {
-  background-color: #a80f18; 
-  transform: translate(5px, 0) scale(1.05);
-}
-
-.viewproject-btn:active {
-  background-color: #a80f18; 
-}
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
   background-color: #df1621;
@@ -144,6 +194,7 @@ footer a {
   color: #fff;
   transform: translate(5px, 0) scale(1.05);
 }
+
 .hover-container a {
   text-decoration: none;
   color: #df1621;
