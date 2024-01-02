@@ -62,7 +62,7 @@ nav.navbar {
 
 .hero-video-container {
   position: relative;
-  height: 250vh;
+  height: 200vh;
   overflow: hidden;
 }
 
@@ -77,7 +77,7 @@ video {
 
 .content-overlay {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
