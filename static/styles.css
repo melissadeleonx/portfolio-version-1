@@ -2,7 +2,24 @@
 /* Mobile Device styling */
 @media (max-width: 768px) {
  
+  .hero-video-container {
+    height: auto;
+  }
+
+  video {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .content-overlay {
+    top: 50%;
+    transform: translate(0, -50%) scale(1.2);
+  }
+
 }
+
+
+
 /* Global Styles */
 
 .brand-logo {
