@@ -112,23 +112,24 @@ footer a {
   margin-right: 40px;
 }
 
-.nav-item2 .nav-link {
-  color: #000;
+.nav-pills .nav-link {
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
+  color: inherit;
+  margin-right: 15rem
 }
 
-.nav-item2 .nav-link:hover, .nav-item2 .nav-link:focus {
+.nav-pills .nav-link:hover,
+.nav-pills .nav-link:focus {
   background-color: #df1621;
   color: #fff;
   transform: translate(5px, 0) scale(1.05);
 }
 
-.nav-item2 .nav-link.active {
+.nav-pills .nav-link.active {
   background-color: #df1621;
-  color: #fff; 
-  transform: translate(5px, 0) scale(1.05); 
+  color: #fff;
+  transform: translate(5px, 0) scale(1.05);
 }
-
 .hover-container a {
   text-decoration: none;
   color: #df1621;
