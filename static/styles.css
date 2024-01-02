@@ -114,10 +114,24 @@ footer a {
 
 .nav-pills .nav-link {
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
-  color: #df1621;
+  color: inherit;
   margin-right: 15rem
 }
+.viewproject-btn {
+  background-color: #df1621;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
 
+.viewproject-btn:hover,
+.viewproject-btn:focus {
+  background-color: #a80f18; 
+  transform: translate(5px, 0) scale(1.05);
+}
+
+.viewproject-btn:active {
+  background-color: #a80f18; 
+}
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
   background-color: #df1621;
