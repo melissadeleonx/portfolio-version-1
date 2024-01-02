@@ -114,13 +114,13 @@ footer a {
 
 .nav-pills .nav-link {
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
-  color: inherit;
+  color: #df1621;
   margin-right: 15rem
 }
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
-  background-color: #df1621 !important;
+  background-color: #df1621;
   color: #fff;
   transform: translate(5px, 0) scale(1.05);
 }
