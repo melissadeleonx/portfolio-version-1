@@ -120,7 +120,7 @@ footer a {
 
 .nav-pills .nav-link:hover,
 .nav-pills .nav-link:focus {
-  background-color: #df1621;
+  background-color: #df1621 !important;
   color: #fff;
   transform: translate(5px, 0) scale(1.05);
 }
