@@ -26,3 +26,23 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.remove('dark-mode');
     }
 });
+
+// Function to update the displayed time
+function updateTime() {
+    // Get the current time
+    const now = new Date();
+
+    // Format the time as HH:MM:SS
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    // Update the content of the element with the formatted time
+    document.getElementById('realtime-clock').innerText = `${hours}:${minutes}:${seconds}`;
+}
+
+// Call the updateTime function every second (1000 milliseconds)
+setInterval(updateTime, 1000);
+
+// Initial call to display the time immediately
+updateTime();
