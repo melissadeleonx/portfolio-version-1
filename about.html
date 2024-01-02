@@ -70,7 +70,7 @@
     
         <hr class="my-1 mx-4" style="background-color: #fff; height: 1px;">
     
-        <main class="container-fluid px-5 py-5 text-start">
+                <main class="container-fluid px-5 py-5 text-start">
             <div class="row mx-2 g-3">
                <!-- Navigation Column -->
                 <div class="col-md-6">
@@ -80,19 +80,20 @@
                     <p class="mt-3 max-w-md leading-normal">
                         I am learning web and software development and currently building small programs to improve my skills.
                     </p>
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link" href="#aboutme">About Me &rarr;</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#experience">Experience &rarr;</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects &rarr;</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#achievements">License and Certificates &rarr;</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/cv.pdf">View My CV &rarr;</a></li>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#aboutme">About Me &rarr;</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#experience">Experience &rarr;</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#projects">Projects &rarr;</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="#achievements">License and Certificates &rarr;</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="pill" href="/cv.pdf">View My CV &rarr;</a></li>
                     </ul>
                 </div>
         
                 <!-- Sections Column -->
                 <div class="col-md-6">
                     <!-- Add your sections content here -->
-                    <section id="aboutme">
+                    <div class="tab-content">
+                        <section id="aboutme" class="tab-pane fade show active">
                         <h2>About Me</h2>
                         <p>
                             In my younger years, success was synonymous with financial prosperity and a life untouched by worries 
@@ -122,7 +123,7 @@
                         </p>
                     </section>
                     
-                    <section id="experience">
+                    <section id="experience" class="tab-pane fade">
                         <h2>Experience</h2>
                         <!-- Work 1 -->
                     <span class="hover-container2">
@@ -209,8 +210,8 @@
                         </a>
                     </span>
                     </section>
-                    
-                    <section id="projects">
+
+                    <section id="projects" class="tab-pane fade">
                         <h2>My Pride and Joy</h2>
                         <!-- Project 1 -->
                     <span class="hover-container2">
@@ -280,7 +281,7 @@
                     </div>
                     </section>
 
-                    <section id="achievements">
+                    <section id="achievements" class="tab-pane fade">
                         <h2>License and Certificates</h2>
                          <!-- Carousel of Certificates -->
                     <div id="achievementsCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -363,8 +364,8 @@
                         </div>
                     </div>
                     </section>
-                   
-                </div>
+                </div> <!-- tab content end here -->
+                </div> 
             </div>
         </main>
 
