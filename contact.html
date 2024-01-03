@@ -71,12 +71,36 @@
             </div>
         </nav>
 
-        <main>
-            <!-- START CODE HERE -->
-            <p id="realtime-clock"></p>
-        
-        
-        </main>
+        <main class="d-flex align-items-center text-center">
+            <!-- CONTACT FORM -->
+            <div class="container">
+              <form action="https://formspree.io/f/mqkrkbrj" method="POST" class="form-contact">
+                <div class="text-center mb-4 mt-4"> <!-- Added mt-4 for top margin -->
+                  <img class="mb-4" src="static/img/melissa-deleon-black-logo.png" alt="" width="72" height="72">
+                  <h1 class="h3 mb-3 font-weight-normal">Contact ME &#x1F431;</h1>
+                  <p>I love hearing feedback about my works or if you just want to say hi!</p>
+                </div>
+          
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="form-label-group">
+                      <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row justify-content-center mt-2">
+                  <div class="col-md-8">
+                    <div class="form-label-group">
+                      <textarea name="message" id="inputMessage" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                  </div>
+                </div>
+          
+                <button class="btn btn-lg btn-primary btn-block mt-3 viewproject-btn" type="submit">Submit</button> <!-- Added mt-3 for top margin -->
+              </form>
+            </div>
+          </main>
 
         <div class="text-center mt-4 mb-4 pt-5">
             <p class="text-muted">Learning and coding every day. Stay tuned for updates!!</p>
