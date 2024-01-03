@@ -11,44 +11,9 @@
 
   <div class="container">
     <h1>PDF Viewer</h1>
-    <!-- Container for the PDF viewer -->
-    <div id="pdf-container"></div>
+    <!-- Embed PDF in an iframe -->
+    <iframe src="https://docs.google.com/gview?url=https://github.com/melissadeleonx/melissadeleonx.github.io/raw/main/Melissa-DeLeon-CV.pdf&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>
   </div>
-
-  <!-- Include PDF.js library -->
-  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-
-  <script>
-    // Function to load PDF using PDF.js
-    function loadPDF(url, container) {
-      // Fetch PDF file
-      fetch(url)
-        .then(response => response.arrayBuffer())
-        .then(data => {
-          // Load PDF using PDF.js
-          pdfjsLib.getDocument(data).promise.then(pdfDoc => {
-            // Loop through each page and append to container
-            for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
-              pdfDoc.getPage(pageNum).then(page => {
-                const canvas = document.createElement('canvas');
-                container.appendChild(canvas);
-
-                const context = canvas.getContext('2d');
-                const viewport = page.getViewport({ scale: 1.5 });
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                page.render({ canvasContext: context, viewport: viewport });
-              });
-            }
-          });
-        })
-        .catch(error => console.error('Error loading PDF:', error));
-    }
-
-    // Call the function to load PDF
-    loadPDF('https://github.com/melissadeleonx/melissadeleonx.github.io/raw/main/Melissa-DeLeon-CV.pdf', document.getElementById('pdf-container'));
-  </script>
 
 </body>
 </html>
