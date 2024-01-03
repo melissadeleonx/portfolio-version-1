@@ -3,11 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Melissa De Leon CV</title>
+  <title>Your Portfolio</title>
+  <!-- Include PDF.js library -->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 </head>
 <body>
 
-  <embed type="application/x-google-chrome-pdf" src="https://github.com/melissadeleonx/melissadeleonx.github.io/raw/main/Melissa-DeLeon-CV.pdf" original-url="https://github.com/melissadeleonx/melissadeleonx.github.io/raw/main/Melissa-DeLeon-CV.pdf" background-color="4283586137" javascript="allow" full-frame="">
+  <h1>Welcome to My Portfolio!</h1>
+
+  <!-- Container for the PDF viewer -->
+  <div id="pdf-container"></div>
+
+  <script>
+    // Function to load PDF using PDF.js
+    function loadPDF(url, container) {
+      // Fetch PDF file
+      fetch(url)
+        .then(response => response.arrayBuffer())
+        .then(data => {
+          // Load PDF using PDF.js
+          pdfjsLib.getDocument(data).promise.then(pdfDoc => {
+            // Loop through each page and append to container
+            for (let pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+              pdfDoc.getPage(pageNum).then(page => {
+                const canvas = document.createElement('canvas');
+                container.appendChild(canvas);
+
+                const context = canvas.getContext('2d');
+                const viewport = page.getViewport({ scale: 1.5 });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                page.render({ canvasContext: context, viewport: viewport });
+              });
+            }
+          });
+        })
+        .catch(error => console.error('Error loading PDF:', error));
+    }
+
+    // Call the function to load PDF
+    loadPDF('https://github.com/melissadeleonx/melissadeleonx.github.io/raw/main/Melissa-DeLeon-CV.pdf', document.getElementById('pdf-container'));
+  </script>
 
 </body>
 </html>
