@@ -26,29 +26,5 @@ document.addEventListener('DOMContentLoaded', function () {
         body.classList.remove('dark-mode');
     }
 
-      // real-time clock function
-  function updateTime() {
-    const currentTime = new Date();
-    const hours = currentTime.getHours();
-    const minutes = currentTime.getMinutes();
-    const seconds = currentTime.getSeconds();
-
-    const formattedTime = `${hours}:${minutes}:${seconds}`;
-
-    // Update the content of the element with the current time
-    document.getElementById("real-time-clock").innerText = formattedTime;
-  }
-
-  // Update the time initially
-  updateTime();
-
-  // Set up an interval to update the time every second
-  setInterval(updateTime, 1000);
 });
 
-
-// Call the updateTime function every second (1000 milliseconds)
-setInterval(updateTime, 1000);
-
-// Initial call to display the time immediately
-updateTime();
