@@ -3,16 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Portfolio</title>
-  <!-- Include PDF.js library -->
-  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+  <title>PDF Viewer with Bootstrap</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
-  <h1>Welcome to My Portfolio!</h1>
+  <div class="container">
+    <h1>PDF Viewer</h1>
+    <!-- Container for the PDF viewer -->
+    <div id="pdf-container"></div>
+  </div>
 
-  <!-- Container for the PDF viewer -->
-  <div id="pdf-container"></div>
+  <!-- Include PDF.js library -->
+  <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 
   <script>
     // Function to load PDF using PDF.js
