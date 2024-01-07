@@ -49,6 +49,13 @@ body.light-mode {
     color: #000;
 }
 
+.sun-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  fill: #d3b353; 
+}
+
 nav.navbar {
     background-color: #000 !important;
     color: #fff !important;
