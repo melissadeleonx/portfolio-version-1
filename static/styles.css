@@ -5,6 +5,19 @@
     margin-right: 0 !important; 
     margin-left: 0 !important; 
 }
+
+  .nav-pills {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .col-md-6 {
+    width: 120%;
+  }
 }
 
 
@@ -38,12 +51,12 @@ body.light-mode {
     color: #000;
 }
 
-.sun-icon:hover {
+/* .sun-icon:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
   fill: #aa9555;
-}
+} */
 
 nav.navbar {
     background-color: #000 !important;
