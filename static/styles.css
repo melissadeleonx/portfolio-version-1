@@ -2,8 +2,8 @@
 /* Mobile Device styling */
 @media (max-width: 768px) {
   body {
-    margin-right: 0; 
-    margin-left: 0;  
+    margin-right: 0 !important; 
+    margin-left: 0 !important; 
 }
 }
 
@@ -188,7 +188,7 @@ footer a {
 .nav-pills .nav-link {
   transition: transform 0.2s, background-color 0.2s, color 0.2s;
   color: inherit;
-  margin-right: 15rem
+  margin-right: 0; 
 }
 
 .nav-pills .nav-link:hover,
@@ -203,7 +203,6 @@ footer a {
   color: #fff;
   transform: translate(5px, 0) scale(1.05);
 }
-
 .hover-container a {
   text-decoration: none;
   color: #df1621;
