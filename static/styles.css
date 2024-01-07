@@ -5,19 +5,6 @@
     margin-right: 0 !important; 
     margin-left: 0 !important; 
 }
-
-  .nav-pills {
-    flex-direction: column;
-  }
-
-  .nav-item {
-    width: 100%;
-    text-align: center;
-  }
-
-  .col-md-6 {
-    width: 120%;
-  }
 }
 
 
