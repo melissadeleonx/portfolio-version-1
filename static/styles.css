@@ -1,21 +1,10 @@
 
 /* Mobile Device styling */
 @media (max-width: 768px) {
- 
-  .hero-video-container {
-    height: auto;
-  }
-
-  video {
-    height: auto;
-    max-width: 100%;
-  }
-
-  .content-overlay {
-    top: 50%;
-    transform: translate(0, -50%) scale(1.2);
-  }
-
+  body {
+    margin-right: 0; 
+    margin-left: 0;  
+}
 }
 
 
@@ -53,7 +42,7 @@ body.light-mode {
   transform: scale(1.1);
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
-  fill: #d3b353; 
+  fill: #aa9555;
 }
 
 nav.navbar {
