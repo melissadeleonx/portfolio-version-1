@@ -1,0 +1,74 @@
+
+.navbar-brand img {
+    margin-right: 5px;
+}
+
+
+/* Connecting Galaxies effect */
+.text-shine:hover {
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: rainbowShine 3s linear infinite;
+  }
+
+  @keyframes rainbowShine {
+    0% {
+      background-position: 200% 50%;
+    }
+    100% {
+      background-position: -100% 50%;
+    }
+  }
+
+
+/* No text decoration on anchor links */
+footer a {
+    text-decoration: none;
+
+}
+
+
+.text-shine:hover {
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text; 
+  color: transparent;
+  animation: rainbowShine 1.5s linear infinite;
+}
+
+@keyframes rainbowShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.hover-container a {
+  text-decoration: none;
+  /* color: #df1621; */
+}
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hover-container:hover .hover-content {
+  visibility: visible;
+  opacity: 1;
+}
