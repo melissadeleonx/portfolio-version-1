@@ -3,6 +3,14 @@
     margin-right: 5px;
 }
 
+.card:hover {
+  background-color: #9dc6f2; 
+}
+
+.btn-group .btn-repo {
+  background-color: #0d6efd;
+  color: #ffffff; /* Set text color to white or another contrasting color */
+}
 
 /* Connecting Galaxies effect */
 .text-shine:hover {
