@@ -1,5 +1,75 @@
 
 /* Additional Styling */
+
+/* Navbar */
+.navbar-brand img {
+    margin-right: 5px;
+}
+
+
+/* Name Rainbow effect */
+.text-shine:hover {
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: rainbowShine 8s linear infinite;
+}
+
+@keyframes rainbowShine {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: -100% 50%;
+  }
+}
+
+/* cs50 duck on header */
+.hover-container a {
+text-decoration: none;
+/* color: #df1621; */
+}
+
+.hover-container {
+position: relative;
+display: inline-block;
+}
+
+.hover-content {
+visibility: hidden;
+opacity: 0;
+position: absolute;
+top: -50px;
+left: 50%;
+transform: translateX(-50%);
+transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.hover-container:hover .hover-content {
+visibility: visible;
+opacity: 1;
+}
+
+
+
+/* Cards for projects, work experience and certificates */
+.card
+{
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  background-color: #9dc6f2; 
+  transform: scale(1.05);
+}
+
+.btn-group .btn-repo {
+  background-color: #0d6efd;
+  color: #ffffff; 
+}
+
 /* ul.tech-horizontal-list {
   list-style: none;
   padding: 0;
@@ -20,84 +90,10 @@ ul.tech-horizontal-list li {
 }
 
 
-.navbar-brand img {
-    margin-right: 5px;
-}
 
-.card:hover {
-  background-color: #9dc6f2; 
-}
-
-.btn-group .btn-repo {
-  background-color: #0d6efd;
-  color: #ffffff; 
-}
-
-/* Rainbow effect */
-.text-shine:hover {
-    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    background-size: 200% 200%;
-    animation: rainbowShine 3s linear infinite;
-  }
-
-  @keyframes rainbowShine {
-    0% {
-      background-position: 200% 50%;
-    }
-    100% {
-      background-position: -100% 50%;
-    }
-  }
-
-
-/* No text decoration on anchor links */
+/* Footer - no text decoration on anchor links */
 footer a {
     text-decoration: none;
 
 }
 
-
-.text-shine:hover {
-  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  background-clip: text; 
-  color: transparent;
-  animation: rainbowShine 1.5s linear infinite;
-}
-
-@keyframes rainbowShine {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-.hover-container a {
-  text-decoration: none;
-  /* color: #df1621; */
-}
-
-.hover-container {
-  position: relative;
-  display: inline-block;
-}
-
-.hover-content {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: opacity 0.5s ease, visibility 0.5s ease;
-}
-
-.hover-container:hover .hover-content {
-  visibility: visible;
-  opacity: 1;
-}
