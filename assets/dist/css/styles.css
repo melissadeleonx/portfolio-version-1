@@ -1,4 +1,25 @@
 
+/* Additional Styling */
+/* ul.tech-horizontal-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+} */
+
+ul.tech-horizontal-list li {
+  margin-right: 10px; 
+  font-size: 12px;
+  font-family: Courier New, sans-serif;
+  
+}
+
+.tech-horizontal-list li:before {
+  content: "\2022"; 
+  margin-right: 5px; 
+}
+
+
 .navbar-brand img {
     margin-right: 5px;
 }
@@ -9,10 +30,10 @@
 
 .btn-group .btn-repo {
   background-color: #0d6efd;
-  color: #ffffff; /* Set text color to white or another contrasting color */
+  color: #ffffff; 
 }
 
-/* Connecting Galaxies effect */
+/* Rainbow effect */
 .text-shine:hover {
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     -webkit-background-clip: text;
