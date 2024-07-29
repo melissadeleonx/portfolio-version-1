@@ -11,14 +11,22 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: black;
-    background-size: cover;
+    overflow: hidden;    
   }
-  
+
+  .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
   
 .wormhole-effect {
-    position: fixed;
-    top: 60%;
+    position: absolute;
+    top: 70%;
     left: 50%;
     transform: translate(var(--x, -50%), var(--y, -50%)) rotate(0deg);
     font-size: 20vmin;
